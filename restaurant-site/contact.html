@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+	Author: Tennie Jacobson
+	Date Created: 10/16/2018
+	Most Recent Revisions: 10/18/2018
+	Objective: This is the markup for the best ways to Caupona Mirabile.
+-->
+<html lang="en">
+	<head>
+		<title>Caupona Mirabile | Contact Us | Fancy Dining</title>
+		<link href="styles/restaurant-styles.css" rel="stylesheet" type="text/css"/>
+	</head>
+	  <body>
+			<header><h1>Caupona Mirabile | Contact Us</h1></header>
+
+<!-- Navigation Bar -->
+		<nav>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact </a></p>
+		</nav>
+
+			<!-- Beginning the form -->
+      <form action="submit.html" method="POST">
+				<!-- Text Input from user for Name, Email, & Phone -->
+				<label class="required" for="person-name">
+					<span class="input-label">Name:</span>
+				</label>
+        <input class="input-source" type="text" id="person-name" name="person-name" /><br />
+				<label class="required" for="email">
+					<span class="input-label">Email:</span>
+				</label>
+				<input class="input-source" type="text" id="email" name="email" /><br />
+        <label for="phone">
+					<span class="input-label">Phone:</span>
+				</label>
+        <input class="input-source" type="text" id="phone" name="phone" /><br />
+
+				<!-- Selection input from user for reason of inquiry -->
+        <label for="inquiry-select">
+					<span class="input-label">Reason for Inquiry:</span>
+				</label>
+        <select class="input-source">
+          <option value="DEFAULT" selected>Catering</option>
+          <option value="PRIVATE">Private Party</option>
+          <option value="FEEDBACK">Feedback</option>
+          <option value="OTHER">Other</option>
+        </select><br />
+
+				<!-- Text input from user for additional information -->
+				<label for="additional-info">
+					<span class="input-label">Additional Information:</span>
+				</label>
+        <textarea id="additional-info" name="additional-info" style="width: 300px"></textarea><br />
+
+				<!-- Radio input from user if repeat-customer -->
+				<span class="input-label">Have you been to the restaurant?</span>
+				<span class="input-source">
+					<input type="radio" id="choice1" name="question" />
+					<label for="choice1">Yes</label>
+					<input type="radio" id="choice2" name="question" checked;/>
+					<label for="choice2">No</label>
+				</span><br />
+
+				<!-- Checkbox input on best day to contact user -->
+				<span class="input-label, required">Best days to contact you</span>
+				<span id="days-of-week">
+					<input type="checkbox" id="monday" name="monday" value="MONDAY" checked />
+					<label for="monday">M</label>
+					<input type="checkbox" id="tuesday" name="tuesday" value="TUESDAY" />
+					<label for="tuesday">T</label>
+					<input type="checkbox" id="wednesday" name="wednesday" value="WEDNESDAY" />
+					<label for="wednesday">W</label>
+					<input type="checkbox" id="thursday" name="thursday" value="THURSDAY" />
+					<label for="thursday">Th</label>
+					<input type="checkbox" id="friday" name="friday" value="FRIDAY" />
+					<label for="friday">F</label>
+					<input type="checkbox" id="saturday" name="saturday" value="SATURDAY" />
+					<label for="saturday">S</label>
+					<input type="checkbox" id="sunday" name="sunday" value="SUNDAY" />
+					<label for="sunday">Su</label>
+				</span><br />
+
+				<!-- Submit radio button to submit.html -->
+        <input type="submit" value="Send Request"/> <br />
+        <hr />
+      </form>
+
+			<footer>
+				<span class="foot">
+					<p>1284 Minnesota Street, Eau Claire, WI 54701</p>
+					<p>555-342-3424</p>
+				</span>
+			</footer>
+	  </body>
+	</html>
