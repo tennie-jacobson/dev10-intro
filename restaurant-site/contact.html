@@ -11,7 +11,7 @@
 		<link href="styles/restaurant-styles.css" rel="stylesheet" type="text/css"/>
 	</head>
 	  <body>
-			<header><h1>Caupona Mirabile</h1></header>
+			<header><h1>Caupona Mirabile | Contact Us</h1></header>
 
 <!-- Navigation Bar -->
 		<nav>
@@ -20,9 +20,9 @@
 			<p><a href="contact.html">Contact </a></p>
 		</nav>
 
-<!-- Beginning the form -->
+			<!-- Beginning the form -->
       <form action="submit.html" method="POST">
-<!-- Text Input from user for Name, Email, & Phone -->
+				<!-- Text Input from user for Name, Email, & Phone -->
 				<label class="required" for="person-name">
 					<span class="input-label">Name:</span>
 				</label>
@@ -36,7 +36,7 @@
 				</label>
         <input class="input-source" type="text" id="phone" name="phone" /><br />
 
-<!-- Selection input from user for reason of inquiry -->
+				<!-- Selection input from user for reason of inquiry -->
         <label for="inquiry-select">
 					<span class="input-label">Reason for Inquiry:</span>
 				</label>
@@ -47,13 +47,13 @@
           <option value="OTHER">Other</option>
         </select><br />
 
-<!-- Text input from user for additional information -->
+				<!-- Text input from user for additional information -->
 				<label for="additional-info">
 					<span class="input-label">Additional Information:</span>
 				</label>
         <textarea id="additional-info" name="additional-info" style="width: 300px"></textarea><br />
 
-<!-- Radio input from user if repeat-customer -->
+				<!-- Radio input from user if repeat-customer -->
 				<span class="input-label">Have you been to the restaurant?</span>
 				<span class="input-source">
 					<input type="radio" id="choice1" name="question" />
@@ -62,7 +62,7 @@
 					<label for="choice2">No</label>
 				</span><br />
 
-<!-- Checkbox input on best day to contact user -->
+				<!-- Checkbox input on best day to contact user -->
 				<span class="input-label, required">Best days to contact you</span>
 				<span id="days-of-week">
 					<input type="checkbox" id="monday" name="monday" value="MONDAY" checked />
@@ -81,6 +81,7 @@
 					<label for="sunday">Su</label>
 				</span><br />
 
+				<!-- Submit radio button to submit.html -->
         <input type="submit" value="Send Request"/> <br />
         <hr />
       </form>
