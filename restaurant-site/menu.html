@@ -2,17 +2,42 @@
 <html lang="en">
 	<head>
 		<title>Caupona Mirabile | Menu | Fancy Dining</title>
+		<link href="styles/restaurant-styles.css" rel="stylesheet" type="text/css"/>
+		<style>
+			table {
+				background-color: #FEF9FF;
+				border: 1px solid #0d1F2D;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			thead th {
+				font-weight: bold;
+				font-size: 1.1em
+			}
+			tr {
+				height: 30px;
+			}
+			tbody tr:nth-child(odd){
+				background-color: #FEF9FF; /*33E8C5;*/
+			}
+			tbody tr:nth-child(even), tfoot td{
+				background-color: #DDD2D1;
+			}
+		</style>
 	</head>
 
 	<body>
 		<main>
 			<header><h1>Caupona Mirabile</h1></header>
 
-			<nav>
-				<hr />
-				<div id="nav"><p> <a href="index.html">Home</a> &nbsp; <a href="menu.html">Menu</a> &nbsp; <a href="contact.html">Contact </a></div>
-			</nav>
+<!-- Navigation Bar -->
+		<nav>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact </a></p>
+		</nav>
 
+<!-- Menu Section with an article for each item -->
 			<section class="menu-list">
 				<article class="menu-item">
 					<h4><strong>Burger and Fries</strong></h4>
@@ -64,7 +89,35 @@
 				</article>
 			</section>
 
+			<table style="width:500px;">
+				<thead>
+					<tr>
+						<th colspan="2">Beverages</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Root Beer</td>
+						<td>$3.00</td>
+					</tr>
+					<tr>
+						<td>Bottled Water</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td>Lemonade</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Iced Tea</td>
+						<td>$1.25</td>
+					</tr>
+				</tbody>
+			</table>
+
 			<hr />
+
+<!-- Footer with address and phone number information -->
 			<footer>
 				<p>1284 Minnesota Street, Eau Claire, WI 54701</p>
 				<p>555-342-3424</p>

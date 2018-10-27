@@ -3,29 +3,31 @@
 	Author: Tennie Jacobson
 	Date Created: 10/16/2018
 	Most Recent Revisions: 10/18/2018
-	Objective: This is the markup for the best ways to contact me.
+	Objective: This is the markup for the best ways to Caupona Mirabile.
 -->
 <html lang="en">
 	<head>
 		<title>Caupona Mirabile | Contact Us | Fancy Dining</title>
+		<link href="styles/restaurant-styles.css" rel="stylesheet" type="text/css"/>
 	</head>
 	  <body>
 			<header><h1>Caupona Mirabile</h1></header>
 
 <!-- Navigation Bar -->
-			<nav>
-				<hr />
-				<div id="nav"><p> <a href="index.html">Home</a> &nbsp; <a href="menu.html">Menu</a> &nbsp; <a href="contact.html">Contact </a></div>
-			</nav>
+		<nav>
+			<p><a href="index.html">Home</a></p>
+			<p><a href="menu.html">Menu</a></p>
+			<p><a href="contact.html">Contact </a></p>
+		</nav>
 
 <!-- Beginning the form -->
       <form action="submit.html" method="POST">
 <!-- Text Input from user for Name, Email, & Phone -->
-				<label for="person-name">
+				<label class="required" for="person-name">
 					<span class="input-label">Name:</span>
 				</label>
         <input class="input-source" type="text" id="person-name" name="person-name" /><br />
-				<label for="email">
+				<label class="required" for="email">
 					<span class="input-label">Email:</span>
 				</label>
 				<input class="input-source" type="text" id="email" name="email" /><br />
@@ -56,12 +58,12 @@
 				<span class="input-source">
 					<input type="radio" id="choice1" name="question" />
 					<label for="choice1">Yes</label>
-					<input type="radio" id="choice2" name="question" />
+					<input type="radio" id="choice2" name="question" checked;/>
 					<label for="choice2">No</label>
 				</span><br />
 
 <!-- Checkbox input on best day to contact user -->
-				<span class="input-label">Best days to contact you</span>
+				<span class="input-label, required">Best days to contact you</span>
 				<span id="days-of-week">
 					<input type="checkbox" id="monday" name="monday" value="MONDAY" checked />
 					<label for="monday">M</label>
@@ -84,8 +86,10 @@
       </form>
 
 			<footer>
-				<p>1284 Minnesota Street, Eau Claire, WI 54701</p>
-				<p>555-342-3424</p>
+				<span class="foot">
+					<p>1284 Minnesota Street, Eau Claire, WI 54701</p>
+					<p>555-342-3424</p>
+				</span>
 			</footer>
 	  </body>
 	</html>
