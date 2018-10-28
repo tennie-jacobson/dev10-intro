@@ -12,17 +12,18 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: #FF6F64;
   padding: 2px;
+  margin: 0px;
 }
 header, footer {
   font-size: 1.3em;
   background-color: #FE1300;
   color: #FFFFFF;
-  padding: 2px;
+  padding-left: 60px;
+  margin: 0px
 }
 header {
   font-family: 'Tangerine', cursive;
 }
-
 /* Hyperlink styling */
 a {
   color: #FEF9FF;
@@ -39,9 +40,20 @@ a:visited {
   color: #C50E00;
 }
 
+nav .btn {
+  background-color: #C50E00;
+  color: #fef9ff;
+  padding: 3px;
+}
+
+nav .btn:hover {
+  font-weight: bold;
+}
+
 /* Header for the menu items */
 .menu-item h4 {
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 /* Required labels for user to input */
