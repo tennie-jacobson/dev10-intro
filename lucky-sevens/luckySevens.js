@@ -23,7 +23,7 @@ function validateItems() {
   clearErrors();
   var playMoney = document.forms["gambleSeven"]["startingBet"].value;
   // If num1 is not a number or empty we need to warn the user
-  if(playMoney == isNaN(playMoney) || "") {
+  if(playMoney == isNaN(playMoney) || playMoney == "") {
     alert("Starting bet must be filled in with a number.");
     document.forms["gambleSeven"]["startingBet"].parentElement.className = "form-group has-error";
     document.forms["gambleSeven"]["startingBet"].focus();
